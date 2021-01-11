@@ -226,7 +226,7 @@
     "settings.numberInputForeground": "#D7DAE0",
     "settings.textInputBackground": "#1E2127",
     "settings.textInputBorder": "#181A1F",
-    "settings.textInputForeground": "#D7DAE0",
+    "settings.textInputForeground": "#61EFEE",
 
     // Scrollbar
     "scrollbar.shadow": "#FFFFFF00",
@@ -256,7 +256,7 @@
     "statusBarItem.hoverBackground": "#2F333D",
     "statusBarItem.prominentBackground": "#21252B",
     "statusBarItem.prominentHoverBackground": "#2F333D",
-    "statusBarItem.remoteBackground": "#21252B",
+    "statusBarItem.remoteBackground": "#5a34a0",
     "statusBarItem.remoteForeground": "#9DA5B4",
 
     // Tabs
