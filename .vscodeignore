@@ -4,4 +4,10 @@
 .gitignore
 vsc-extension-quickstart.md
 *.log
+*.vsix
 .DS_Store
+.changeset/
+/node_modules/
+/package-lock.json
+/src/
+/build/

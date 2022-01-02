@@ -1,15 +1,16 @@
 {
     "name": "vscode-atomizer-theme",
-    "displayName": "Atomizer (Atom One Dark theme)",
-    "description": "A detailed and accurate Atom One Dark Theme",
-    "version": "1.0.1",
+    "displayName": "Atomizer Theme",
+    "description": "Minimalizm Light and Dark Theme",
+    "license": "MIT",
+    "version": "1.2.0",
     "publisher": "riipandi",
-    "icon": "images/icon.png",
+    "icon": "icon.png",
     "author": {
         "name": "riipandi"
     },
     "engines": {
-        "vscode": "^1.12.0"
+        "vscode": "^1.43.0"
     },
     "categories": [
         "Themes"
@@ -19,24 +20,27 @@
         "theme",
         "atom",
         "dark",
-        "one dark"
+        "light",
+        "one dark",
+        "copilot"
     ],
     "contributes": {
         "themes": [
             {
-                "label": "Atomizer",
+                "label": "Atomizer Dark",
                 "uiTheme": "vs-dark",
-                "path": "./themes/Atomizer-color-theme.json"
+                "path": "./themes/atomizer-dark-theme.json"
+            },
+            {
+                "label": "Atomizer Light",
+                "uiTheme": "vs",
+                "path": "./themes/atomizer-light-theme.json"
             }
         ]
     },
     "galleryBanner": {
-        "color": "#17293C",
+        "color": "#220660",
         "theme": "dark"
-    },
-    "scripts": {
-        "fix": "prettier '**/*.{json,md,yml}' --write",
-        "lint": "prettier '**/*.{json,md,yml}' --check"
     },
     "husky": {
         "hooks": {
@@ -55,14 +59,33 @@
         "url": "https://github.com/riipandi/vscode-atomizer-theme.git"
     },
     "homepage": "https://github.com/riipandi/vscode-atomizer-theme/blob/master/readme.md",
+    "scripts": {
+        "start": "nodemon --watch src src/index.js",
+        "build": "node src/index.js && mkdir -p build",
+        "package": "vsce package -o ./build/$npm_package_name-$npm_package_version.vsix",
+        "prepublishOnly": "npm run build && vsce publish",
+        "lint": "prettier '**/*.{json,md,yml}' --check",
+        "fix": "prettier '**/*.{json,md,yml}' --write",
+        "release": "changeset publish"
+    },
     "devDependencies": {
-        "husky": "4.2.5",
-        "lint-staged": "10.2.11",
-        "prettier": "2.0.5"
+        "@changesets/changelog-github": "^0.4.2",
+        "@changesets/cli": "^2.19.0",
+        "@primer/primitives": "7.4.0",
+        "chroma-js": "^2.1.2",
+        "color": "^3.1.2",
+        "husky": "7.0.4",
+        "lint-staged": "12.1.4",
+        "nodemon": "^2.0.15",
+        "prettier": "2.5.1",
+        "vsce": "^2.6.0"
     },
     "__metadata": {
         "id": "44ccc6f3-7438-4c16-9740-236dbf63bfc9",
         "publisherDisplayName": "Aris Ripandi",
         "publisherId": "ef208bcb-6f04-4154-9969-7fdfdf7c525f"
+    },
+    "publishConfig": {
+        "access": "public"
     }
 }
