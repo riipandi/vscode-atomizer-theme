@@ -4,8 +4,6 @@
 
 This is fork of [Atomize VSCode Theme](https://marketplace.visualstudio.com/items?itemName=emroussel.atomize-atom-one-dark-theme). A detailed and accurate Atom One Dark theme.
 
-<img src="./images/screenshot.png" alt="Screenshot of VS Code with Atomizer" />
-
 To get the icons in the screenshot above and an experience closer to Atom, check out my [Atom Icons theme](https://github.com/riipandi/atom-icons).
 
 **Note that if you want the same syntax highlighting as Atom One Dark, you will need to turn off semantic highlighting in your VS Code settings:**
