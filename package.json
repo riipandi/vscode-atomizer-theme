@@ -3,7 +3,7 @@
     "displayName": "Atomizer Theme",
     "description": "Minimalizm Light and Dark Theme",
     "license": "MIT",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "publisher": "riipandi",
     "icon": "icon.png",
     "author": {
@@ -16,15 +16,29 @@
         "Themes"
     ],
     "keywords": [
-        "color",
-        "theme",
         "atom",
+        "color",
+        "copilot",
         "dark",
+        "icon",
         "light",
+        "minimalist",
         "one dark",
-        "copilot"
+        "product",
+        "theme"
+    ],
+    "extensionKind": [
+        "ui",
+        "workspace"
     ],
     "contributes": {
+        "productIconThemes": [
+            {
+                "id": "atomizer-product-icons",
+                "label": "Atomizer Product Icons",
+                "path": "./theme/vsc-product-icon-theme.json"
+            }
+        ],
         "themes": [
             {
                 "label": "Atomizer Dark",
