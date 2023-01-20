@@ -3,7 +3,7 @@
     "displayName": "Atomizer Theme",
     "description": "Minimalizm Light and Dark Theme",
     "license": "MIT",
-    "version": "1.2.3",
+    "version": "2.0.0",
     "publisher": "riipandi",
     "icon": "icon.png",
     "author": {
@@ -68,24 +68,23 @@
     "homepage": "https://github.com/riipandi/vscode-atomizer-theme/blob/master/readme.md",
     "scripts": {
         "start": "nodemon --watch src src/index.js",
-        "build": "node src/index.js && mkdir -p build",
-        "package": "vsce package -o ./build/$npm_package_name-$npm_package_version.vsix",
-        "prepublishOnly": "npm run build && vsce publish",
+        "build": "mkdir -p build && vsce package -o ./build/$npm_package_name-$npm_package_version.vsix",
+        "publish": "vsce publish",
         "lint": "prettier '**/*.{json,md,yml}' --check",
         "fix": "prettier '**/*.{json,md,yml}' --write",
         "release": "changeset publish"
     },
     "devDependencies": {
-        "@changesets/changelog-github": "^0.4.2",
-        "@changesets/cli": "^2.19.0",
-        "@primer/primitives": "7.4.0",
-        "chroma-js": "^2.1.2",
-        "color": "^3.1.2",
-        "husky": "7.0.4",
-        "lint-staged": "12.1.4",
-        "nodemon": "^2.0.15",
-        "prettier": "2.5.1",
-        "vsce": "^2.6.0"
+        "@changesets/changelog-github": "^0.4.8",
+        "@changesets/cli": "^2.26.0",
+        "@primer/primitives": "7.10.0",
+        "chroma-js": "^2.4.2",
+        "color": "^4.2.3",
+        "husky": "8.0.3",
+        "lint-staged": "13.1.0",
+        "nodemon": "^2.0.20",
+        "prettier": "2.8.3",
+        "vsce": "^2.15.0"
     },
     "__metadata": {
         "id": "44ccc6f3-7438-4c16-9740-236dbf63bfc9",
