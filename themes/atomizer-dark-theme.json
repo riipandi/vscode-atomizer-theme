@@ -92,7 +92,7 @@
       "name": "Comment",
       "scope": ["comment"],
       "settings": {
-        "foreground": "#707a84"
+        "foreground": "#229977"
       }
     },
     {
