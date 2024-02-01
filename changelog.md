@@ -2,6 +2,10 @@
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 2.1.1 (February 01, 2024)
+
+- Fix various formatting
+
 ## 2.1.0 (February 01, 2024)
 
 - Refresh light color scheme
