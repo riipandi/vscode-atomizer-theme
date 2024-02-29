@@ -1,6 +1,7 @@
 node_modules/
 *.vsix
 *.log
+*.env*
 .DS_Store
 .DS_Store?
 package-lock.json
