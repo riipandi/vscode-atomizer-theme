@@ -2,6 +2,10 @@
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 2.3.0 (Marc 16, 2024)
+
+- Change dark colors
+
 ## 2.2.0 (February 29, 2024)
 
 - Change git colors
