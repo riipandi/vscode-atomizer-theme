@@ -1,97 +1,103 @@
 {
-  "name": "vscode-atomizer-theme",
-  "displayName": "Atomizer Theme",
-  "description": "Minimalizm Light and Dark Theme",
-  "license": "MIT",
-  "version": "2.3.0",
-  "publisher": "riipandi",
-  "icon": "icon.png",
-  "author": {
-    "name": "riipandi"
-  },
-  "engines": {
-    "vscode": "^1.43.0"
-  },
-  "categories": [
-    "Themes"
-  ],
-  "keywords": [
-    "atom",
-    "color",
-    "copilot",
-    "dark",
-    "icon",
-    "light",
-    "minimalist",
-    "one dark",
-    "product",
-    "theme"
-  ],
-  "extensionKind": [
-    "ui",
-    "workspace"
-  ],
-  "contributes": {
-    "themes": [
-      {
-        "label": "Atomizer Dark",
-        "uiTheme": "vs-dark",
-        "path": "./themes/atomizer-dark-theme.json"
-      },
-      {
-        "label": "Atomizer Light",
-        "uiTheme": "vs",
-        "path": "./themes/atomizer-light-theme.json"
-      }
-    ]
-  },
-  "galleryBanner": {
-    "color": "#220660",
-    "theme": "dark"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "npm run lint"
-    }
-  },
-  "lint-staged": {
-    "**/*.{json,md,yml}": "npm run fix"
-  },
-  "bugs": {
-    "url": "https://github.com/riipandi/vscode-atomizer-theme/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/riipandi/vscode-atomizer-theme.git"
-  },
-  "homepage": "https://github.com/riipandi/vscode-atomizer-theme/blob/master/readme.md",
-  "scripts": {
-    "start": "nodemon --watch src src/index.js",
-    "build": "mkdir -p build && vsce package -o ./build/$npm_package_name-$npm_package_version.vsix",
-    "publish": "vsce publish",
-    "lint": "prettier '**/*.{json,md,yml}' --check",
-    "fix": "prettier '**/*.{json,md,yml}' --write",
-    "release": "changeset publish"
-  },
-  "devDependencies": {
-    "@changesets/changelog-github": "^0.4.8",
-    "@changesets/cli": "^2.26.0",
-    "@primer/primitives": "7.10.0",
-    "chroma-js": "^2.4.2",
-    "color": "^4.2.3",
-    "husky": "8.0.3",
-    "lint-staged": "13.1.0",
-    "nodemon": "^2.0.20",
-    "prettier": "2.8.3",
-    "vsce": "^2.15.0"
-  },
-  "__metadata": {
-    "id": "44ccc6f3-7438-4c16-9740-236dbf63bfc9",
-    "publisherDisplayName": "Aris Ripandi",
-    "publisherId": "ef208bcb-6f04-4154-9969-7fdfdf7c525f"
-  },
-  "publishConfig": {
-    "access": "public"
-  }
+    "name": "vscode-atomizer-theme",
+    "displayName": "Atomizer Theme",
+    "description": "Minimalizm Light and Dark Theme",
+    "license": "MIT",
+    "version": "2.4.0",
+    "publisher": "riipandi",
+    "icon": "icon.png",
+    "author": {
+        "name": "riipandi"
+    },
+    "engines": {
+        "vscode": "^1.43.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "keywords": [
+        "atom",
+        "color",
+        "copilot",
+        "dark",
+        "icon",
+        "light",
+        "minimalist",
+        "one dark",
+        "product",
+        "theme"
+    ],
+    "extensionKind": [
+        "ui",
+        "workspace"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Atomizer Dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/atomizer-dark-theme.json"
+            },
+            {
+                "label": "Atomizer Light",
+                "uiTheme": "vs",
+                "path": "./themes/atomizer-light-theme.json"
+            },
+            {
+                "label": "Atomizer Soft",
+                "uiTheme": "vs",
+                "path": "./themes/atomizer-light-soft.json"
+            }
+        ]
+    },
+    "galleryBanner": {
+        "color": "#220660",
+        "theme": "dark"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged",
+            "pre-push": "npm run lint"
+        }
+    },
+    "lint-staged": {
+        "**/*.{json,md,yml}": "npm run fix"
+    },
+    "bugs": {
+        "url": "https://github.com/riipandi/vscode-atomizer-theme/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/riipandi/vscode-atomizer-theme.git"
+    },
+    "homepage": "https://github.com/riipandi/vscode-atomizer-theme/blob/master/readme.md",
+    "scripts": {
+        "start": "nodemon --watch src src/index.js",
+        "build": "mkdir -p build && vsce package -o ./build/$npm_package_name-$npm_package_version.vsix",
+        "publish": "vsce publish",
+        "lint": "prettier '**/*.{json,md,yml}' --check",
+        "fix": "prettier '**/*.{json,md,yml}' --write",
+        "release": "changeset publish"
+    },
+    "devDependencies": {
+        "@changesets/changelog-github": "^0.4.8",
+        "@changesets/cli": "^2.26.0",
+        "@primer/primitives": "7.10.0",
+        "chroma-js": "^2.4.2",
+        "color": "^4.2.3",
+        "husky": "8.0.3",
+        "lint-staged": "13.1.0",
+        "nodemon": "^2.0.20",
+        "prettier": "2.8.3",
+        "vsce": "^2.15.0"
+    },
+    "__metadata": {
+        "id": "44ccc6f3-7438-4c16-9740-236dbf63bfc9",
+        "publisherDisplayName": "Aris Ripandi",
+        "publisherId": "ef208bcb-6f04-4154-9969-7fdfdf7c525f"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "packageManager": "pnpm@10.4.1"
 }
