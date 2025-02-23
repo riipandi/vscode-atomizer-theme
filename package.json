@@ -3,7 +3,7 @@
     "displayName": "Atomizer Theme",
     "description": "Minimalizm Light and Dark Theme",
     "license": "MIT",
-    "version": "2.4.2",
+    "version": "2.4.3",
     "publisher": "riipandi",
     "icon": "icon.png",
     "author": {
@@ -45,7 +45,7 @@
             },
             {
                 "label": "Atomizer Soft",
-                "uiTheme": "vs",
+                "uiTheme": "vs-dark",
                 "path": "./themes/atomizer-soft-theme.json"
             }
         ]
